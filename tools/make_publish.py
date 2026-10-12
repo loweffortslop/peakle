@@ -80,6 +80,6 @@ with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as z:
     for f in sorted(ts.iterdir()):
         z.write(f, f.name)
 
-print(f"github:       {gh} ({sum(1 for p in gh.rglob('*') if p.is_file())} files)")
+print(f"github:       {gh} ({sum(1 for p in gh.rglob('*') if p.is_file() and '.git' not in p.relative_to(gh).parts[:1])} files)")
 print(f"thunderstore: {ts}")
 print(f"zip:          {zip_path}")
