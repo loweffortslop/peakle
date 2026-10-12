@@ -1,0 +1,6 @@
+bin/
+obj/
+*.user.props
+dist/
+publish/
+_decomp/

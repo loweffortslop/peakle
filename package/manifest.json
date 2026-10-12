@@ -1,0 +1,9 @@
+{
+  "name": "Peakle",
+  "version_number": "1.0.0",
+  "website_url": "https://github.com/loweffortslop/peakle",
+  "description": "White Knuckle style climbing and inventory handling. Two independently working hands. Works in MP",
+  "dependencies": [
+    "BepInEx-BepInExPack_PEAK-5.4.75301"
+  ]
+}
